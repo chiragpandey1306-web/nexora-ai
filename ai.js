@@ -21,10 +21,8 @@ async function chat(prompt) {
 
 async function generateImage(prompt) {
   const puter = getPuter();
-  return await puter.ai.txt2img(prompt);
+  const image = await puter.ai.txt2img(prompt);
+  return image.src;
 }
 
-module.exports = {
-  chat,
-  generateImage
-};
+module.exports = { chat, generateImage };
