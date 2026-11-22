@@ -1,0 +1,14 @@
+{
+  "name": "nexora",
+  "version": "1.0.0",
+  "description": "All-in-One AI Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "puter": "latest",
+    "dotenv": "^16.4.7"
+  }
+}
