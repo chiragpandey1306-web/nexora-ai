@@ -21,6 +21,7 @@ client.once("ready", () => {
 });
 
 client.on("messageCreate", async (message) => {
+  console.log("MESSAGE RECEIVED:", message.content);
   if (message.author.bot) return;
 
   const isMentioned = message.mentions.has(client.user);
